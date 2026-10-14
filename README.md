@@ -1,5 +1,27 @@
 # 30nama for LG webOS TV (unofficial)
 
+<div dir="rtl" lang="fa">
+
+## نصب سریع
+
+۱. **روشن کردن حالت توسعه‌دهنده (فقط یک بار):** در [webostv.developer.lge.com](https://webostv.developer.lge.com/) یک حساب رایگان بسازید. روی تلویزیون از فروشگاه LG برنامه‌ی **Developer Mode** را نصب کنید و با همان حساب وارد شوید. **Dev Mode Status** را روشن کنید (تلویزیون ری‌استارت می‌شود) و بعد **Key Server** را روشن کنید.
+
+۲. فایل **[30nama-webos.ipk](https://github.com/mmahdim77/30nama-webos/releases/latest/download/30nama-webos.ipk)** را دانلود کنید.
+
+۳. برنامه‌ی **[webOS Dev Manager](https://github.com/webosbrew/dev-manager-desktop/releases/latest)** را روی کامپیوتر نصب کنید (ویندوز، مک یا لینوکس).
+
+۴. در Dev Manager تلویزیون را اضافه کنید و رمزی (Passphrase) را که در برنامه‌ی Developer Mode نمایش داده می‌شود وارد کنید.
+
+۵. در زبانه‌ی **Apps** روی **Install** بزنید و فایل ipk را انتخاب کنید. تمام! برنامه‌ی **30nama** در فهرست برنامه‌های تلویزیون است.
+
+> **نکته:** حالت توسعه‌دهنده بعد از حدود ۵۰ ساعت خاموش می‌شود و برنامه از تلویزیون پاک می‌شود. برای تمدید، در زبانه‌ی **Info** برنامه‌ی Dev Manager روی **Renew session** بزنید (یا در برنامه‌ی Developer Mode روی **Extend**).
+>
+> برای تماشا به اشتراک ۳۰نما نیاز دارید؛ ورود با اسکن کد QR با گوشی انجام می‌شود. این برنامه غیررسمی است و وابسته به ۳۰نما نیست.
+
+</div>
+
+---
+
 An unofficial [30nama.com](https://30nama.com) app for LG webOS TVs, made for the remote: QR sign-in, home rows, details, search, archive, a Persian/English UI with right-to-left support, subtitles, continue watching, and a full TV player.
 
 It is a webOS port of [msharifi99/30nama-tizenos](https://github.com/msharifi99/30nama-tizenos) (Samsung Tizen).
@@ -43,7 +65,7 @@ Works on Windows, macOS and Linux.
 4. Go to the **Apps** tab, click **Install**, and choose the `30nama-webos.ipk` you downloaded.
 5. **30nama** now appears in the TV's app list.
 
-To stop Developer Mode from expiring, open Dev Manager's **Info** tab: it shows the remaining time, with **Renew session** and **Renew automatically…** buttons.
+To stop Developer Mode from expiring, open Dev Manager's **Info** tab: it shows the remaining time and has a **Renew session** button. **Renew automatically…** gives you a renewal link and script that you can schedule yourself.
 
 ### Option 2: command line (macOS / Linux)
 
