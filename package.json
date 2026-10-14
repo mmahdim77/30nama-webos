@@ -1,0 +1,23 @@
+{
+  "name": "30nama-webos",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Unofficial 30nama client for LG webOS TV (port of msharifi99/30nama-tizenos).",
+  "homepage": "https://github.com/mmahdim77/30nama-webos#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmahdim77/30nama-webos.git"
+  },
+  "scripts": {
+    "dev": "node webos-app/tools/devserver.js 8080",
+    "icons": "node webos-app/tools/make-icons.js",
+    "package": "./deploy.sh package",
+    "deploy": "./deploy.sh deploy",
+    "launch": "./deploy.sh launch",
+    "logs": "./deploy.sh inspect"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@webos-tools/cli": "^3.2.6"
+  }
+}

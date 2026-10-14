@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1920, height=1080, initial-scale=1">
+<title>30nama</title>
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M4 11l8-7 8 7v8.5a1 1 0 0 1-1 1h-4v-6h-6v6H5a1 1 0 0 1-1-1z"/></symbol>
+  <symbol id="i-movies" viewBox="0 0 24 24"><rect x="3.5" y="6" width="17" height="14" rx="2"/><path d="M3.5 10.5h17M7 6l2.5 4.5M12 6l2.5 4.5M17 6l2.5 4.5"/></symbol>
+  <symbol id="i-series" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="12" rx="2"/><path d="M8 21h8M12 17v4"/></symbol>
+  <symbol id="i-anime" viewBox="0 0 24 24"><path d="M11 3.5l2 5.5 5.5 2-5.5 2-2 5.5-2-5.5-5.5-2 5.5-2z"/><path d="M19 17l.7 1.8 1.8.7-1.8.7L19 22l-.7-1.8-1.8-.7 1.8-.7z"/></symbol>
+  <symbol id="i-archive" viewBox="0 0 24 24"><rect x="4" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.5"/></symbol>
+  <symbol id="i-settings" viewBox="0 0 24 24"><path d="M4 7h9M19 7h1M4 17h1M11 17h9"/><circle cx="16" cy="7" r="2.2"/><circle cx="8" cy="17" r="2.2"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8.5" r="3.5"/><path d="M5 20c.8-3.6 3.8-5.5 7-5.5s6.2 1.9 7 5.5"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15l12.5-7.5z" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24"><rect x="6" y="4.5" width="4" height="15" rx="1" fill="currentColor" stroke="none"/><rect x="14" y="4.5" width="4" height="15" rx="1" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5.5M12 7.8v.4"/></symbol>
+  <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 7h11M9 12h11M9 17h11M4.5 7h.1M4.5 12h.1M4.5 17h.1"/></symbol>
+  <symbol id="i-warn" viewBox="0 0 24 24"><path d="M12 4l9 16H3z"/><path d="M12 10v4.5M12 17.3v.2"/></symbol>
+  <symbol id="i-back" viewBox="0 0 24 24"><path d="M5 12h14M11 6l-6 6 6 6"/></symbol>
+  <symbol id="i-prev" viewBox="0 0 24 24"><path d="M6 5v14"/><path d="M19 5.5v13L9 12z" fill="currentColor"/></symbol>
+  <symbol id="i-next" viewBox="0 0 24 24"><path d="M18 5v14"/><path d="M5 5.5v13L15 12z" fill="currentColor"/></symbol>
+  <symbol id="i-cc" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M10.5 10.2a2.4 2.4 0 1 0 0 3.6M17 10.2a2.4 2.4 0 1 0 0 3.6"/></symbol>
+  <symbol id="i-audio" viewBox="0 0 24 24"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z"/><path d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11"/></symbol>
+  <symbol id="i-hd" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M7 9v6M11 9v6M7 12h4M14 9v6h1.5a3 3 0 0 0 0-6z"/></symbol>
+  <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3.5" width="6" height="11" rx="3"/><path d="M5.5 11.5a6.5 6.5 0 0 0 13 0M12 18v3"/></symbol>
+</svg>
+
+<div id="stage">
+  <img class="bd a" alt="">
+  <img class="bd b" alt="">
+  <div class="bleed-mask"></div>
+  <div class="scrim-start"></div>
+  <div class="scrim-bottom"></div>
+  <div class="scrim-top"></div>
+  <div class="scrim-details"></div>
+  <div class="stage-dim"></div>
+</div>
+
+<div id="app">
+  <main id="content"></main>
+</div>
+<div id="rail" class="gone"></div>
+
+<div id="player" class="hidden">
+  <video id="video" playsinline></video>
+  <div id="subtitle"></div>
+  <div id="osd" class="off">
+    <div class="p-top"></div>
+    <div class="p-bot"></div>
+    <div id="osd-title"></div>
+    <div id="osd-sub"></div>
+    <div id="osd-clock" class="tab"></div>
+    <div id="scrub">
+      <div class="trk"><i class="buf"></i><i class="fill"></i></div>
+      <div class="thumb"><i></i></div>
+      <div class="bubble"><div><div class="pv stale"><canvas width="384" height="216"></canvas></div><b class="lbl"><span id="bub-t"></span><em id="bub-d"></em></b></div></div>
+    </div>
+    <div id="osd-time"><span id="osd-t1"></span><span id="osd-t2"></span></div>
+    <div id="osd-tech" class="tab"></div>
+    <div id="pbar"></div>
+  </div>
+  <div id="pglyph"><svg class="ico"><use href="#i-play"/></svg></div>
+  <button id="skip-btn" class="f"></button>
+  <div id="upnext"><div class="th"></div><div class="tx"><div class="u1"></div><div class="u2"></div><div class="u3"></div></div><div class="ub"><span class="f" id="un-play"></span><span class="f" id="un-cred"></span></div><div class="cd"></div></div>
+  <div id="player-eps"><div class="eptrack"></div></div>
+  <div id="player-menu"></div>
+  <div id="player-about"></div>
+  <div id="player-spin" class="hidden"></div>
+</div>
+<div id="toast"></div>
+<div id="splash">
+  <div class="bloom"></div>
+  <div class="wordmark"><b>30</b>nama</div>
+  <div class="line"></div>
+  <div class="dots3"><i></i><i></i><i></i></div>
+</div>
+
+<script src="js/lib/qrcode.js"></script>
+<script src="js/lib/hls.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/tmdb-token.js"></script>
+<script src="js/api.js"></script>
+<script src="js/tmdb.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/stage.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/logo.js"></script>
+<script src="js/thumbs.js"></script>
+<script src="js/player.js"></script>
+<script src="js/screens.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

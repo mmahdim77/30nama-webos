@@ -1,0 +1,16 @@
+# secrets / personal
+webos-app/js/tmdb-token.js
+
+# build output
+build/
+dist/
+*.ipk
+
+# tooling
+node_modules/
+*.log
+.DS_Store
+
+
+# local tooling
+.claude/
